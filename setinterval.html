@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+    <!-- <style>
+        #alarm{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+           #alarm::after{
+            content: "++";
+        }
+         padding: 100px;
+            text-align: center;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <div id="alarm">0</div> -->
+    <script>
+        let alarm = () => console.log(`good morning. wake up. ${new Date()}`);
+        let intervalId = setInterval(alarm, 1000);
+        setTimeout(() => clearInterval(intervalId), 5000);
+
+
+
+
+
+
+        // let count =0;
+        // function fun1(){
+        //     count++;
+
+        //     if(count<=100){
+        //         document.querySelector('#alarm').innerHTML=count;
+        //     }
+        // }
+        // setInterval(fun1,100);
+    </script>
+</body>
+</html>
